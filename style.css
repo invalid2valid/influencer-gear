@@ -171,7 +171,7 @@ main>h2 {
 
 /* see more */
 .see-more {
-    margin: 30px 5% ;
+    margin: 30px 5%;
 
     /* justify-content: right; */
     text-align: right;
@@ -203,15 +203,17 @@ main>h2 {
     margin-bottom: 16px;
 }
 
-.f-product-text>p{
+.f-product-text>p {
     font-weight: 700;
     font-size: 16px;
     color: #6C6C6C;
     line-height: 28px;
 }
-.f-p{
+
+.f-p {
     margin: 16px 0;
 }
+
 .s-btn {
     color: white;
     padding: 10px 24px;
@@ -220,20 +222,105 @@ main>h2 {
 }
 
 /* footer */
-footer{
+footer {
     background: #0A0826;
 }
-.foot{
-    padding: 50px 0 ;text-align: center;
+
+.foot {
+    padding: 50px 0;
+    text-align: center;
 }
-.foot>h3{
+
+.foot>h3 {
     color: white;
     font-weight: 700;
-font-size: 24px;
+    font-size: 24px;
 }
-.foot{
+
+.foot {
     color: #D9DBE1;
     font-weight: 700;
-font-size: 14px;
-line-height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* finish for pc */
+.hide {
+    display: none;
+}
+
+/* -----------------
+    media q
+-------------- */
+@media only screen and (max-width: 576px) {
+
+    header,
+    main {
+        margin: 0;
+    }
+
+    .nav-title {
+        font-weight: 700;
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-items {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        background: url(./images/Circle\ design.svg);
+        background-size: 257px 257px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-top: 30px;
+    
+    }
+
+    .banner-image>img {
+        width: 202px;
+        height: 190px;
+    }
+    .banner-text{
+        width: 100%;
+        text-align: center;
+    }
+    .e-com>ul {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        border: none;
+        padding: 0;
+    }
+    .container {
+       
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+        /* justify-content: space-between; */
+        justify-items: center;
+    }
+    .f-product {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px 0;
+        width: 100%;
+        gap:50px;
+        text-align: center;
+    }
+    .f-product-image>img {
+        width: 299px;
+        height: 188px;
+        border-radius: 7px;
+    
+    }
+    .f-product-text>p {
+        font-weight: 700;
+        font-size: 16px;
+        color: #6C6C6C;
+        line-height: 28px;
+    }
 }
